@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "required": [
+        "token"
+    ],
+    "properties": {
+        "token": {
+            "title": "用户令牌",
+            "type": "string",
+            "pattern": "(?:\\w|\\+|/|=)+\\.(?:\\w|\\+|/|=)+\\.(?:\\w|\\+|/|=|-|_)+"
+        },
+        "losslessMode": {
+            "title": "音频类型",
+            "type": "string",
+            "enum": [
+                "All",
+                "Lossless",
+                "Lossy"
+            ]
+        },
+        "outputPattern": {
+            "title": "输出路径模式",
+            "type": "string"
+        }
+    },
+    "additionalProperties": true
+}
