@@ -1,3 +1,4 @@
+#Requires -Version 6
 [CmdletBinding(DefaultParameterSetName = "InputFile")]
 param (
     [Parameter(Mandatory = $true, ParameterSetName = "Search")]
